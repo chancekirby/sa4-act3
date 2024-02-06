@@ -14,6 +14,9 @@ while True:
         break
 
     print(f'You have {guess_limit - guess_count} guesses left.')
+    if int(guess) < number: print("Guess higher...")
+    else: print("Guess lower...")
+
     guess = input("Guess again (enter q to exit): ")
     guess_count += 1
 
@@ -26,5 +29,4 @@ while True:
         break
     
     
-
 
